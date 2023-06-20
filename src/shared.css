@@ -1,5 +1,28 @@
+/* mega menu guide 
+https://www.w3schools.com/howto/howto_css_mega_menu.asp 
+*/
+
 #main-nav {
     overflow: hidden;
     background-color: #333;
     font-family: Arial;
+    opacity: 0.8;
   }
+
+#nav-logo {
+    float: left;
+}
+
+.dropdown a {
+    float: left;
+    font-size: 2rem;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.dropdown ul {
+    list-style: none;
+}
