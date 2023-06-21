@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* 스타일링을 위한 CSS 코드 */
+        .mega-menu {
+            display: inline-block;
+            position: relative;
+        }
+    
+        .mega-menu ul {
+            display: none;
+            position: relative;
+            left: 0;
+            top: 100%;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    
+        .mega-menu li {
+            display: flex;
+            padding: 10px;
+        }
+    
+        .mega-menu li:hover {
+            background-color: #e0e0e0;
+        }
+    
+        .mega-menu:hover ul {
+            display: block;
+        }
+    </style>
+    
+    <div class="mega-menu">
+        <a href="#">메뉴</a>
+        <ul>
+            <li><a href="#">메가메뉴 1</a></li>
+            <li><a href="#">메가메뉴 2</a></li>
+            <li><a href="#">메가메뉴 3</a></li>
+        </ul>
+    </div>
+    
+</body>
+</html>

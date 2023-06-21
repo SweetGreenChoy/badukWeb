@@ -1,11 +1,14 @@
+/* font */
+
+
 body {
     background-color: #FFF;
     color: #000;
-    font-family: Arial, sans-serif;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
   }
 
   header {
-    background-color: #FFF;
+    background-color: #000;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -14,7 +17,7 @@ body {
   }
 
   .logo {
-    color: #000;
+    color: #FFF;
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
@@ -27,35 +30,30 @@ body {
     display: flex;
   }
 
-  #head-nav ul li {
-    padding-left: 0;
-    padding-right: 0.25rem;
+  #login{
+    background-color: #ffd700;
+    padding: 0 0.5rem;
+    border-radius: 20px;
+    font-weight: bold;
   }
 
   #head-nav ul li a {
-    color: #000;
+    color: #FFF;
     text-decoration: none;
-  }
+    text-align: center;
+    }
 
   #head-nav ul li:after {
     content: "|";
     display: inline-block;
+
     margin: 0 0.15rem;
-    color: blue;
+    color: #c6dc9a;
   }
 
   #head-nav ul li:last-child:after{
     padding-left: 0.75rem;
     content: "";
-  }
-
-  #login{
-    background-color: #f6be00;
-    color: #FFF;
-    padding: 0 0.5rem;
-    border-radius: 20px;
-    font-weight: bold;
-    text-decoration: none;
   }
 
   .main-screen {
