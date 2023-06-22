@@ -1,42 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>바둑 토너먼트</title>
-    <link rel="stylesheet" href="./src/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>바둑 토너먼트</title>
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./src/shared.css">
 </head>
 <body>
-    <header>
-        <a id="head-logo" href="#">바둑 토너먼트 로고</a>
-        <nav id="head-nav">
-          <ul>
-            <li><a href="#">홈</a></li>
-            <li><a href="#">캐쉬충전</a></li>
-            <li><a href="#">내정보</a></li>
-            <li><a href="#">고객센터</a></li>
-            <li id="login"><a href="#">로그인</a></li> 
-          </ul>
-        </nav>
-      </header>
+  <header id="top-nav">
+      <a id="head-logo" href="#">바둑 토너먼트 로고</a>
+      <nav id="head-nav">
+        <ul>
+          <li><a href="#">홈</a></li>
+          <li><a href="#">캐쉬충전</a></li>
+          <li><a href="#">내정보</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li id="login"><a href="#">로그인</a></li> 
+        </ul>
+      </nav>
+    </header>
 
-    <main>
-        <section>
+  <header id="main-nav">
+    <a href="index.html" id="main-logo"><img src="https://cdn-icons-png.flaticon.com/512/3401/3401206.png" alt="Nav Logo" width=70px></a>
+    <nav class="main-nav">
+      <div class="menus">
+        <button onclick="location.href='#news'">새소식</button>
+          <a href="#news/menu">메</a>
+          <a href="#news/event">뉴</a>
+      </div>
+      <div class="menus">
+        <button onclick="location.href='#guide'">게임 가이드</button>
+          <a href="#">메</a>
+          <a href="#">뉴</a>
+          <a href="#">들</a>
+      </div>
+      <div class="menus">
+        <button onclick="location.href='#lesson'">바둑강좌</button>
+      </div>
+      <div class="menus">
+        <button onclick="location.href='#board'">게시판</button>
+      </div>
+  </header>
 
-        </section>
+  <main>
+    <section id="hero-banner">
+      <div class="hero">
+        <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2218134A595E162A10" alt="Image1">
+      </div>
+      <div class="hero">
 
-        <section>
+      </div>
+      <div class="hero">
 
-        </section>
-        
-        <section>
+      </div>
+    </section>
 
-        </section>
-    </main>
+    <section class="articles">
 
-    <footer>
+    </section>
+  </main>
 
-    </footer>
+  <footer>
+
+  </footer>
 </body>
 </html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .slideshow-container {
+      max-width: 100%;
+      position: relative;
+      margin: auto;
+    }
+    
+    .mySlides {
+      display: none;
+    }
+    
+    .mySlides img {
+      width: 100%;
+    }
+    
+    .prev,
+    .next {
+      position: absolute;
+      top: 50%;
+      color: #fff;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      padding: 16px;
+      border-radius: 5px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .next {
+      right: 0;
+      border-radius: 5px;
+    }
+    
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="slideshow-container">
+    <div class="mySlides">
+      <img src="image1.jpg" alt="Image 1">
+    </div>
+  
+    <div class="mySlides">
+      <img src="image2.jpg" alt="Image 2">
+    </div>
+  
+    <div class="mySlides">
+      <img src="image3.jpg" alt="Image 3">
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+  
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+  
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+  
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+  
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      
+      slides[slideIndex - 1].style.display = "block";
+    }
+
+    setInterval(function() {
+      plusSlides(1);
+    }, 3000); // 3초마다 이미지 전환
+  </script>
+  
+</body>
+</html>
