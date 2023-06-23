@@ -39,8 +39,12 @@
     font-size: 1.25rem;
   }
 
-  .menus a {
+  .menus button ul {
     display: none;
+  }
+
+  .menus button:hover li{
+    display: block;
   }
 
   main {
